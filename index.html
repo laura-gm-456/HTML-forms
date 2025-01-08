@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksforGeeks Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="HTML form">
+</head>
+
+<body>
+    
+<section class="form-container">
+    <h1>GeeksforGeeks Survey Form</h1>
+
+<form class="surveyForm">
+        <br> 
+    <label>Name</label><br><br>
+    <input type="text" name="name" placeholder="Enter your name" required><br><br>
+    
+    <label>Email</label><br><br>
+    <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label>Age</label><br><br>
+    <input type="number" name="age" placeholder="Enter your age"><br><br>
+
+     
+<div>
+    <label for="description">Which option best describes you?</label><br><br>
+            <select id="description" name="description" required>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select><br><br>
+</div>
+
+<div>
+    <p>Would you recommend GeeksforGeeks to a friend?</p>
+    <label><input type="radio" name="recommend" value="yes"> Yes </label><br>
+    <label><input type="radio" name="recommend" value="no"> No </label><br>
+    <label><input type="radio" name="recommend" value="maybe"> Maybe </label><br><br>
+</div>
+       
+<div>
+    <p>Languages and frameworks known (Check all that apply)</p>
+    <label><input type="checkbox" name="lang" value="C"> C </label><br>
+    <label><input type="checkbox" name="lang" value="C++"> C++ </label><br>
+    <label><input type="checkbox" name="lang" value="C#"> C# </label><br>
+    <label><input type="checkbox" name="lang" value="Java"> Java </label><br>
+    <label><input type="checkbox" name="lang" value="Python"> Phyton </label><br>
+    <label><input type="checkbox" name="lang" value="JavaScript"> JavaScript </label><br>
+    <label><input type="checkbox" name="lang" value="React"> React </label><br>
+    <label><input type="checkbox" name="lang" value="Angular"> Angular </label><br>
+    <label><input type="checkbox" name="lang" value="Django"> Django </label><br>
+    <label><input type="checkbox" name="lang" value="Spring"> Spring </label><br>
+</div>
+
+<div>
+  <p>Any comments or suggestions</p>
+  <textarea name="comments" rows="4" cols="50"></textarea><br><br>
+</div>
+
+     <div><button type="submit" class="submitButton">Submit</button></div>
+   </form>
+</section> 
+<script src="scripts.js"></script>
+</body>
+</html>
+
