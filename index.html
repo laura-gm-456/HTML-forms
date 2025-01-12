@@ -14,51 +14,55 @@
     <h1>GeeksforGeeks Survey Form</h1>
 
 <form class="surveyForm">
-        <br> 
-    <label>Name</label><br><br>
-    <input type="text" name="name" placeholder="Enter your name" required><br><br>
+    <div class="subsection">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+    </div> 
+
+    <div class="subsection">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+    </div>   
     
-    <label>Email</label><br><br>
-    <input type="email" name="email" placeholder="Enter your email" required><br><br>
-
-    <label>Age</label><br><br>
-    <input type="number" name="age" placeholder="Enter your age"><br><br>
-
+    <div class="subsection">
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Enter your age">
+    </div>
      
-<div>
-    <label for="description">Which option best describes you?</label><br><br>
+    <div class="subsection">
+        <label for="description">Which option best describes you?</label>
             <select id="description" name="description" required>
                 <option value="student">Student</option>
                 <option value="professional">Professional</option>
                 <option value="other">Other</option>
-            </select><br><br>
-</div>
+            </select>
+    </div>
 
-<div>
-    <p>Would you recommend GeeksforGeeks to a friend?</p>
-    <label><input type="radio" name="recommend" value="yes"> Yes </label><br>
-    <label><input type="radio" name="recommend" value="no"> No </label><br>
-    <label><input type="radio" name="recommend" value="maybe"> Maybe </label><br><br>
-</div>
+    <div class="subsection">
+        <p>Would you recommend GeeksforGeeks to a friend?</p>
+        <label><input type="radio" name="recommend" value="yes"> Yes </label>
+        <label><input type="radio" name="recommend" value="no"> No </label>
+        <label><input type="radio" name="recommend" value="maybe"> Maybe </label>
+    </div>
        
-<div>
-    <p>Languages and frameworks known (Check all that apply)</p>
-    <label><input type="checkbox" name="lang" value="C"> C </label><br>
-    <label><input type="checkbox" name="lang" value="C++"> C++ </label><br>
-    <label><input type="checkbox" name="lang" value="C#"> C# </label><br>
-    <label><input type="checkbox" name="lang" value="Java"> Java </label><br>
-    <label><input type="checkbox" name="lang" value="Python"> Phyton </label><br>
-    <label><input type="checkbox" name="lang" value="JavaScript"> JavaScript </label><br>
-    <label><input type="checkbox" name="lang" value="React"> React </label><br>
-    <label><input type="checkbox" name="lang" value="Angular"> Angular </label><br>
-    <label><input type="checkbox" name="lang" value="Django"> Django </label><br>
-    <label><input type="checkbox" name="lang" value="Spring"> Spring </label><br>
-</div>
+    <div class="subsection">
+        <p>Languages and frameworks known<small> (Check all that apply)</small></p>
+        <label><input type="checkbox" name="lang" value="C"> C </label>
+        <label><input type="checkbox" name="lang" value="C++"> C++ </label>
+        <label><input type="checkbox" name="lang" value="C#"> C# </label>
+        <label><input type="checkbox" name="lang" value="Java"> Java </label>
+        <label><input type="checkbox" name="lang" value="Python"> Phyton </label>
+        <label><input type="checkbox" name="lang" value="JavaScript"> JavaScript </label>
+        <label><input type="checkbox" name="lang" value="React"> React </label>
+        <label><input type="checkbox" name="lang" value="Angular"> Angular </label>
+        <label><input type="checkbox" name="lang" value="Django"> Django </label>
+        <label><input type="checkbox" name="lang" value="Spring"> Spring </label>
+    </div>
 
-<div>
-  <p>Any comments or suggestions</p>
-  <textarea name="comments" rows="4" cols="50"></textarea><br><br>
-</div>
+    <div class="subsection">
+        <p>Any comments or suggestions</p>
+        <textarea name="comments" rows="4" cols="50"></textarea>
+    </div>
 
      <div><button type="submit" class="submitButton">Submit</button></div>
    </form>

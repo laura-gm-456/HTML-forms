@@ -11,14 +11,22 @@ body {
 
 .surveyForm {
     background-color: white;
-    padding: 20px 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px 60px;
+    border-radius: 3px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.5);
     width: 600px;
+    margin: 0px auto 40px; 
     text-align: left;
-    top: 80px;
 }
 
+.surveyForm .subsection {
+    margin-bottom: 20px;
+}
+
+.surveyForm label {
+    display: block;
+    margin-bottom: 8px;
+}
 
 h1 {
     text-align: center;
@@ -41,8 +49,9 @@ textarea {
     box-sizing: border-box;
 }
 
-input[type="radio"] {
-    margin-right: 10px;
+.surveyForm input[type="radio"],
+.surveyForm input[type="checkbox"] {
+    margin-right: 1px;
 }
 
 .submitButton {
@@ -60,3 +69,4 @@ input[type="radio"] {
 .submitButton:hover {
     background-color: #ecf157;
 }
+
