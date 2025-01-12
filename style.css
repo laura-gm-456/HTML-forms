@@ -11,7 +11,7 @@ body {
 
 .surveyForm {
     background-color: white;
-    padding: 40px 30px 60px;
+    padding: 30px 30px 60px;
     border-radius: 3px;
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.5);
     width: 600px;
@@ -33,7 +33,7 @@ h1 {
     margin-bottom: 20px;
     color: #2d3436;
     font-size: 43px;
-    padding: 500px 0px 50px 0px 
+    padding: 500px 0px 35px 0px 
 }
 
 input[type="text"],
